@@ -1,0 +1,486 @@
+html{
+    box-sizing: border-box;
+    font-family: "Open Sans";
+  }
+  *,*::after,*::before{
+    box-sizing: inherit ;
+    margin: 0;
+    padding: 0;
+  }
+  html,body{
+    height: 100%;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+
+
+.modal {
+    overflow: hidden;
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(22, 44, 78, 0.5);
+}
+
+
+.modal-content {
+    
+    position: relative; 
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 320px;
+    height: 370px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center; 
+}
+
+
+.close {
+    color: #aaa;
+    position: absolute; 
+    right: 23px; 
+    top: 15px; 
+    font-size: 28px;
+    font-weight: bold;
+}
+.content_succes
+{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  color:#102950;
+
+}
+.content_ident
+{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color:#102950;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #102950;
+    color: white;
+    width: 200px;
+    height: 59px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    align-self: center; 
+}
+
+.close-button:hover {
+    background-color: #555;
+}
+
+
+
+.wrapper
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+.wrapper_leftimg
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.Lead_icon
+{
+    margin-top: 60px;
+}
+.wrapper_rightimg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    text-align: center; 
+}
+
+.container{
+    max-width: 838px;
+    margin: 0 auto;
+    
+    
+  }
+.main_title
+{
+    margin-top: 93px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  color:#7a8494;
+  text-transform: uppercase;
+
+}
+.main_txt
+{
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color:#102950;
+
+}
+.main_icon
+{
+    margin-top: 60px;
+}
+.main_timer
+{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+.timer_divider
+{
+    font-size: 72px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.main_checktxt{
+    margin-top: 72px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.timer_txt
+{
+    display: flex;
+    gap: 24px;
+}
+.days_time, .hours_time, .minutes_time, .seconds_time
+{
+    font-size: 72px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  
+
+}
+.days_text, .hours_text, .minutes_text, .seconds_text
+{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 54px;
+  background-image: url(img/Vector.svg);
+}
+
+
+    
+
+.timer_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_button {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #162C4E; 
+    color: white; 
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 18px; 
+    width: 240px;
+    height: 60px; 
+}
+
+.main_button img {
+    margin-left: 5px; 
+}
+
+.footer {
+    
+    margin-top: 76px;
+    
+    height: 184px;
+    background-color: #162C4E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 440px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px; /
+}
+
+.input-field {
+    border: none;
+    width: 400px;
+    font-size: 16px;
+}
+.input-field:focus {
+    border: none;
+    outline: none;
+}
+.submit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+.no-scroll {
+    overflow: hidden;
+  }
+  
+
+@media screen and (max-width: 1920px)
+{
+
+}
+@media screen and (max-width: 768px)  { 
+    .wrapper_leftimg
+    {
+        width: 360px;
+        height: 302px;
+        left: -50px;
+        top: -100px;
+    }
+    .main_icon
+    {
+        margin-top: 100px;
+    }
+    .container{
+        max-width: 419px;
+        
+        
+        
+      }
+    .main_title{
+        font-size: 36px;
+    }
+    .main_txt
+    
+    {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .main_timer
+    {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .timer_divider
+    {
+        font-size: 36px;
+
+    }
+    .days_time, .hours_time, .minutes_time, .seconds_time
+    {
+        font-size: 36px;
+
+    }
+    .days_text, .hours_text, .minutes_text, .seconds_text
+    {
+        width: 64px;
+        height: 40px;
+        background-image: url(img/VectorAdapt.svg);
+        font-size: 16px;
+
+    }
+    .main_checktxt
+    {
+        font-size: 16px;
+    }
+    .input-container 
+    {
+        max-width: 360px;
+
+    }
+    .input-field
+    {
+        width: 320px;
+        font-size: 14px;
+
+    }
+
+    .days_text::before {
+        content: "DD";
+    }
+    .hours_text::before {
+        content: "HH";
+    }
+    .minutes_text::before {
+        content: "MM";
+    }
+    .seconds_text::before {
+        content: "SS";
+    }
+    .backgroundtxt {
+        font-size: 0 !important;
+    }
+    .backgroundtxt::before {
+        font-size: 16px; 
+    }
+
+
+}
+@media screen and (max-width: 360px)  { 
+
+
+   
+    .wrapper_leftimg
+    {
+        width: 360px;
+        height: 302px;
+        left: -50px;
+        top: -100px;
+    }
+  
+    .wrapper_rightimg
+    {
+        width: 360px;
+        height: 302px;
+        right: 0px;
+        top: -200px;
+
+
+    }
+    .main_title
+    {
+        
+        font-size: 36px;
+    }
+    .container{
+        max-width: 320px;
+        margin: 0 auto;
+        
+        
+      }
+    .main_txt
+    {
+        font-size: 16px;
+    }
+    .timer_divider
+    {
+        font-size: 32px;
+
+    }
+    .main_checktxt
+    {
+        font-size: 16px;
+    }
+    .days_time, .hours_time, .minutes_time, .seconds_time
+    {
+        font-size: 36px;
+
+    }
+    .days_text, .hours_text, .minutes_text, .seconds_text
+    {
+        width: 64px;
+        height: 40px;
+        background-image: url(img/VectorAdapt.svg);
+        font-size: 16px;
+
+    }
+    .input-container 
+    {
+        max-width: 280px;
+
+    }
+    .input-field
+    {
+        width: 250px;
+        font-size: 14px;
+
+    }
+    .main_timer
+    {
+        gap: 18px;
+    }
+    .submit-button
+    {
+        width: 33px;
+        height: 33px;
+
+    }
+    .days_text::before {
+        content: "DD";
+    }
+    .hours_text::before {
+        content: "HH";
+    }
+    .minutes_text::before {
+        content: "MM";
+    }
+    .seconds_text::before {
+        content: "SS";
+    }
+    .backgroundtxt {
+        font-size: 0 !important;
+    }
+    .backgroundtxt::before {
+        font-size: 16px; /* Верните размер шрифта к нормальному */
+    }
+
+ }
+
+
+
